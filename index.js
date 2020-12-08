@@ -181,7 +181,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return kilometers * 0.6213;
+  return (kilometers * 0.6213);
 }
 
 
@@ -194,7 +194,7 @@ Using the feet function below do the following:
 */
 
 function feet(centimeters){
-  return centimeters * 30.48;
+  return (centimeters * 30.48);
 }
  
 
@@ -233,11 +233,11 @@ Using the grade function below do the following:
 */
   
 function grade(result){
-  if (result < 90) return "you got a B";
-  else if (result < 80) return "you got a C";
-  else if (result < 70) return "you got a D";
-  else if (result < 60) return "you got a F";
-  else return "you got an A";
+  if (result >= 90) return "you got a A";
+  else if (result < 90 && result >= 80) return "you got a B";
+  else if (result < 80 && result >= 70) return "you got a C";
+  else if (result < 70 && result >= 60) return "you got a D";
+  else return "you got a F";
 }
   
 console.log('grade function', grade(85));
