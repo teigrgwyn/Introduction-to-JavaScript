@@ -124,19 +124,15 @@ Use the hungryDog function and feeding requirements below to do the following:
 
 function hungryDog(weight, age){
   if (age >= 1) {
-    if (weight > 15) {
-      return weight * 0.02;
-    }
-    else if (weight > 10) {
-      return weight * 0.03;
-    }
-    else if (weight > 5) {
-      return weight * 0.04;
-    }
-    else {
-      return weight * 0.05;
-    }
+    if (weight > 15) return weight * 0.02;
+    else if (weight > 10) return weight * 0.03;
+    else if (weight > 5) return weight * 0.04;
+    else return weight * 0.05;
   }
+  /* 2-4mo = 0.1667-0.3333yr; 4-7mo = 0.3333-0.5833yr; 7-12mo = 0.5833-1yr */
+  else if (age > 0.5833) return weight * 0.04;
+  else if (age > 0.3333) return weight * 0.05
+  else if (age > 0.1667) return weight * 0.1;
 }
 hungryDog(30, 6);
 
@@ -163,8 +159,12 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let rand = Math.round(Math.random());
 function game(user, computer){
-  /*add your code here*/
+  rand = computer;
+  if (user > computer) return 'you win!';
+  else if (user < computer) return 'you lose!';
+  else return 'it\'s a tie'
 }
   
   
