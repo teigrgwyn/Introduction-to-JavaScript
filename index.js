@@ -1,6 +1,6 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
-/*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
+/*MAKE SURE TO RETURN ALL OF THE ANSWERS ON THESE TASKS, IF YOU DON'T, THE AUTO-GRADER WILL NOT WORK*/
 
 /*
 When doing these tasks, we recommend using console.log to test the output of your code to make sure it works correctly.
@@ -17,13 +17,12 @@ Do the following:
 
   HINT: no function required
 */
-let votingAge = 18;
-function Vote(age) {
-  if(age >= 18){
-    return true;
-  }
+
+/*let votingAge = 18;
+if(votingAge >= 18){
+  return true;
 }
-Vote(votingAge);
+*/
 
 
 /*
@@ -38,9 +37,6 @@ Do the following:
 */
 
 
-
-
-
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -53,8 +49,6 @@ Do the following:
 */
 
 
-
-
 /*
 Task 1d - Multiply
  
@@ -63,7 +57,6 @@ Do the following:
   2. Receive the numbers in the parameters: a and b
   3. Multiply a and b and return the answer
 */
-
 function multiply(a, b){
   return a * b;
 }
@@ -152,7 +145,7 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kilometers received to miles
   3. Return the number of miles
 */
 
