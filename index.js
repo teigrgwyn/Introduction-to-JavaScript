@@ -19,7 +19,7 @@ Do the following:
 */
 
 /*let votingAge = 18;
-if(votingAge >= 18){
+if (votingAge >== 18) {
   return true;
 }
 */
@@ -36,6 +36,15 @@ Do the following:
   HINT: no function required
 */
 
+/*
+let a = 1;
+let b = 2;
+if (b === 2) {
+  a = 3;
+  return a;
+}
+*/
+
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,6 +55,11 @@ Do the following:
   3. Return the result
 
   HINT: look up the Number method
+*/
+
+/*
+let a = '1999'
+return = Number(a);
 */
 
 
