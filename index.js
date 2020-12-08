@@ -181,7 +181,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return (kilometers * 0.62137);
+  return (kilometers * 0.621371);
 }
 
 
@@ -211,8 +211,9 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
   while(number > 0) {
+    let temp = number;
     number--;
-    return "`number` bottles of soda on the wall, `number` bottles of soda, take one down pass it around `number` bottles of soda on the wall";
+    return `${temp} bottles of soda on the wall, ${temp} bottles of soda, take one down pass it around ${number} bottles of soda on the wall`;
   }
 }
 
