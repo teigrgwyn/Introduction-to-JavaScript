@@ -49,7 +49,7 @@ if (b === 2) {
 /*
 Task 1c - Convert Strings to Numbers
 
-Do the following:   
+Do the following:
   1. Declare a string type variable with the value of "1999"
   2. Convert the string value of "1999" to a integer value of 1999
   3. Return the result
