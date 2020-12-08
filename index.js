@@ -134,7 +134,7 @@ function hungryDog(weight, age){
   else if (age > 0.3333) return weight * 0.05
   else if (age > 0.1667) return weight * 0.1;
 }
-hungryDog(30, 6);
+hungryDog(15, 1);
 
 
 
@@ -161,9 +161,9 @@ Use the game function below to do the following:
 
 let rand = Math.round(Math.random()*3);
 function game(user, computer){
-  if (rand === 0) computer = 'rock';
-  else if (rand === 1) computer = 'scissors';
-  else computer = 'paper';
+  if (user === "rock") user = 1;
+  else if (user === "scissors") user = 2;
+  else user = 3;
 
   if (user === computer) return "it's a tie";
   else if (user === "rock" && computer === "scissors") return "you won!";
