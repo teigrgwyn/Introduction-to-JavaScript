@@ -159,12 +159,17 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-let rand = Math.round(Math.random());
+let rand = Math.round(Math.random()*3);
 function game(user, computer){
-  rand = computer;
-  if (user > computer) return 'you win!';
-  else if (user < computer) return 'you lose!';
-  else return 'it\'s a tie'
+  if (rand === 0) computer = 'rock';
+  else if (rand === 1) computer = 'scissors';
+  else computer = 'paper';
+
+  if (user === computer) return "it's a tie";
+  else if (user === "rock" && computer === "scissors") return "you won!";
+  else if (user === "scissors" && computer === "paper") return "you won!";
+  else if (user === "paper" && computer === "rock") return "you won!";
+  else return "you lose!";
 }
   
   
